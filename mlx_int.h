@@ -84,16 +84,16 @@ typedef struct	s_win_list
 
 typedef struct	s_img
 {
+	int				width;
+	int				height;
+	char			*data;
 	XImage			*image;
 	Pixmap			pix;
 	GC				gc;
 	int				size_line;
 	int				bpp;
-	int				width;
-	int				height;
 	int				type;
 	int				format;
-	char			*data;
 	XShmSegmentInfo	shm;
 }				t_img;
 
